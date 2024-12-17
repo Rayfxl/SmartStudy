@@ -1,0 +1,18 @@
+package com.example.smartstudy.presentation.subject
+
+import androidx.compose.ui.graphics.Color
+import com.example.smartstudy.domain.model.Session
+import com.example.smartstudy.domain.model.Task
+
+// 定义一个密封类 SubjectEvent，表示科目相关的所有事件
+sealed class SubjectEvent {
+    data object UpdateSubject : SubjectEvent()
+    data object DeleteSubject : SubjectEvent()
+    data object DeleteSession : SubjectEvent()
+    data object UpdateProgress : SubjectEvent()
+    data class OnTaskIsCompleteChange(val task: Task): SubjectEvent()
+    data class OnSubjectCardColorChange(val color: List<Color>): SubjectEvent()
+    data class OnSubjectNameChange(val name: String): SubjectEvent()
+    data class OnGoalStudyHoursChange(val hours: String): SubjectEvent()
+    data class OnDeleteSessionButtonClick(val session: Session): SubjectEvent()
+}
