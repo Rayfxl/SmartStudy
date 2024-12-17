@@ -1,4 +1,4 @@
-本项目基于开源项目StudySmart修改而来，原项目地址：https://github.com/CodeInKotLang/StudySmart。
+本项目基于开源项目StudySmart修改而来，原项目地址：https://github.com/CodeInKotLang/StudySmart 。
 
 后续改进方向：
 
